@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Japan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="hero">
+        <img
+            id="hero-image"
+            src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1800&q=85"
+            alt="Japan travel scenery"
+        >
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="eyebrow">DISCOVER JAPAN</p>
+            <h1 id="hero-title">JAPAN</h1>
+            <p id="hero-subtitle">
+                Explore Japan, One Destination at a Time.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <nav class="category-nav">
+
+            <button class="category-button" data-category="stay">
+                <span class="button-icon">⌂</span>
+                <span>STAY</span>
+            </button>
+
+            <button class="category-button" data-category="food">
+                <span class="button-icon">♨</span>
+                <span>FOOD</span>
+            </button>
+
+            <button class="category-button" data-category="culture">
+                <span class="button-icon">⛩</span>
+                <span>CULTURE</span>
+            </button>
+
+            <div class="next-container">
+                <button class="category-button next-button">
+                    <span class="button-icon">→</span>
+                    <span>NEXT</span>
+                </button>
+
+                <div class="dropdown-menu">
+                    <button data-city="Osaka">Osaka</button>
+                    <button data-city="Tokyo">Tokyo</button>
+                    <button data-city="Fukuoka">Fukuoka</button>
+                    <button data-city="Okinawa">Okinawa</button>
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="welcome">
+            <p class="eyebrow" id="section-label">WELCOME TO JAPAN</p>
+            <h2 id="section-title">Your Journey Begins Here</h2>
+            <p id="section-description">
+                Discover beautiful destinations, delicious food,
+                and unique Japanese culture.
+            </p>
+        </section>
+
+        <section id="info-panel" class="info-panel" hidden>
+            <button id="close-panel" class="close-button">×</button>
+            <p class="eyebrow">YOUR TRAVEL GUIDE</p>
+            <h2 id="info-title"></h2>
+            <div id="info-content"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>DISCOVER JAPAN · TRAVEL YOUR WAY</p>
+    </footer>
+
+</body>
+</html>
